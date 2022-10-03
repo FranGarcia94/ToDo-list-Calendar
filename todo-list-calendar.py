@@ -80,7 +80,7 @@ def update_fun():
 
     textbox_list = t.get(3.0, 'end') # Correspond to everything in textbox, less first line
 
-    # These two lines prepare the word or sentence sentence to be treated
+    # These two lines prepare the word or sentence to be treated
     textbox_list = textbox_list.split("\n")
     textbox_list = list(filter(('').__ne__, textbox_list)) 
 
@@ -166,15 +166,15 @@ if __name__ == '__main__':
     
     root = Tk()
     root.title('Calendar')
-    root.iconbitmap('ga2.ico')
+    root.iconbitmap('ga2.ico') # https://icon-icons.com
 
 
     cal = Calendar(root, Year = year)
 
-    cal.config(background ='#5A3E00', foreground = '#BCFFF9', font = ('Pristina 12 bold'), bordercolor = '#5A3E00', borderwidth = 0,
-        headersbackground = '#FFEDC5', headersforeground ='black', 
-        normalbackground = 'white', normalforeground ='black', weekendbackground = 'white', weekendforeground = 'black',
-        othermonthforeground = '#464646', othermonthbackground ='#C5C5C5', othermonthweforeground ='#464646', othermonthwebackground ='#C5C5C5')
+    cal.config(background = '#5A3E00', foreground = '#BCFFF9', font = ('Pristina 12 bold'), bordercolor = '#5A3E00', borderwidth = 0,
+        headersbackground = '#FFEDC5', headersforeground = 'black', 
+        normalbackground = 'white', normalforeground = 'black', weekendbackground = 'white', weekendforeground = 'black',
+        othermonthforeground = '#464646', othermonthbackground = '#C5C5C5', othermonthweforeground = '#464646', othermonthwebackground = '#C5C5C5')
 
 
     cal.bind('<<CalendarSelected>>', showEvent)
